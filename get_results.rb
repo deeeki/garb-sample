@@ -57,7 +57,7 @@ rs_pt = profile.page_title(defaults.merge(:sort => :pageviews.desc))
 rs_k = profile.keyword(defaults.merge(:sort => :visits.desc))
 rs_rp = profile.referral_path(defaults.merge(:sort => :visits.desc))
 
-puts "# Results for " + target_date.to_s
+puts "# Results for #{target_date.to_s} #{profile.title}"
 puts
 puts "# SiteUsage\n####################"
 puts
