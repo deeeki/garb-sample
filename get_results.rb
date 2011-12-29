@@ -65,10 +65,10 @@ rs_su.each do |r|
   puts r.visits + " visits"
   puts r.pageviews + " pageviews"
   puts r.visitors + " visitors"
-  puts r.pageviews_per_visit + " pages/visit"
-  puts r.visit_bounce_rate + " bounce rate"
-  puts r.avg_time_on_site + " avg. time on site"
-  puts r.percent_new_visits + " % new visits"
+  puts r.pageviews_per_visit.to_f.round(2).to_s + " pages/visit"
+  puts r.visit_bounce_rate.to_f.round(2).to_s + " bounce rate"
+  puts r.avg_time_on_site.to_f.round(2).to_s + " avg. time on site"
+  puts r.percent_new_visits.to_f.round(2).to_s + " % new visits"
   puts
 end
 puts "# PageTitle\n####################"
