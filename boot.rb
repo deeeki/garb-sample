@@ -1,5 +1,8 @@
-#require 'rubygems'
+$:.unshift File.dirname(__FILE__)
+
 require 'bundler/setup'
 Bundler.require(:default) if defined?(Bundler)
 
-require File.expand_path('../config', __FILE__)
+require 'config'
+require 'lib/classes'
+require 'lib/reporter'
