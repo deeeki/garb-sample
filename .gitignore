@@ -1,3 +1,4 @@
 .bundle
 config.rb
 config/garb.yml
+config/mail.yml
